@@ -23,3 +23,6 @@ fruits.remove("banana")
 #5
 fruits = {"apple", "banana", "cherry"}
 fruits.discard("banana")
+
+
+#Example
