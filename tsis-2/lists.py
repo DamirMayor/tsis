@@ -36,3 +36,20 @@ print(fruits[2:5])
 #8
 fruits = ["apple", "banana", "cherry"]
 print(len(fruits))
+
+
+#Examples
+list = ["aboba", "biba", "boba", "aboba", "boba"]
+print(list)
+print(len(list))
+print('\n')
+list1 = ["car", "bike", "shoes"]
+list2 = [1, 2, 3, 4, 5]
+list3 = [True, False, True]
+list4 = [False, "print_name", 14, True, "Damir", 18]
+print('\n')
+mylist = ["Python", "Java", "CPP", "HTML"]
+print(type(mylist))
+print('\n')
+shoes = list(("sneakers", "moccasins"))
+print(shoes)
