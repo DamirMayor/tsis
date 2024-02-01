@@ -1,0 +1,78 @@
+
+import math
+
+print("#1")
+class string:
+    def __init__(self, str):
+        self.str = str
+    
+    def getString(self):
+        self.str = input()
+    
+    def printString(self):
+        print(self.str.upper())
+        
+a = string("Hi")
+a.getString()
+a.printString()    
+
+
+print('\n')
+print("#2")
+class Shape:
+    def __init__(self, len):
+        self.len = len
+        
+    def area(self):
+        return 0
+        
+        
+class Square(Shape):
+    def area(self):
+        return self.len * self.len
+        
+x = Shape(15)
+y = Square(25)
+print(x.area())
+print(y.area())
+
+
+print('\n')
+print("#3")
+class Rectangle(Shape):
+    def __init__(self, len, wid):
+        self.len = len
+        self.wid = wid
+        
+    def area(self):
+        return self.len * self.wid
+    
+x = Rectangle(15, 20)
+print(x.area())
+
+
+print('\n')
+print("#4")
+class Point:
+    def __init__(self, x_coord, y_coord):
+        self.x_coord = x_coord
+        self.y_coord = y_coord
+        
+    def show(self):
+        print(self.x_coord, self.y_coord)
+        
+    def move(self, x, y): 
+        self.x_coord = x 
+        self.y_coord = y
+        print(self.x_coord, self.y_coord)
+        
+    def dist(self, x2, y2):
+        self.x2 = x2
+        self.y2 = y2
+        print(math.sqrt((self.x_coord - self.x2)**2 + (self.y_coord - self.y2)**2))
+    
+point = Point(2, 5)
+point.show()
+point.move(5, 2)
+point.show()
+point.dist(10, 10)
