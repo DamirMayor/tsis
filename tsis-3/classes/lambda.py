@@ -13,4 +13,4 @@ print('\n')
 def my_func(n):
   return lambda a : a * n
 my_func1 = my_func(2)
-print(my_func(11))
+print(my_func1(11))
