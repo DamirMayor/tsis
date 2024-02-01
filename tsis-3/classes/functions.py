@@ -30,7 +30,7 @@ def my_function(**kid):
   print("His last name is " + kid["lname"])
 
 
-#Exercises
+#Examples
 def my_function(fname):
   print(fname + " Kardashyan")
 my_function("Kim")
