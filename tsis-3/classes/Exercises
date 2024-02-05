@@ -74,3 +74,29 @@ point.show()
 point.move(5, 2)
 point.show()
 point.dist(10, 10)
+
+
+print('\n')
+print("#5")
+class Account:
+    def __init__(self, owner, balance):
+        self.owner = owner
+        self.balance = balance
+
+    def withdraw(self, money):
+        if self.balance < money:
+            print("You don't have enough money!")
+        else: 
+            self.balance -= money
+            print("You have withrawn " + str(money) + " tenge")
+            print("Now you have " + str(self.balance) + " tenge left")
+    def deposit(self, money):
+        self.balance += money
+        print("You have deposited " + str(money) + " tenge")
+        print("Now you have " + str(self.balance) + " tenge")
+
+obj = Account("Damir", 10000)
+obj.withdraw(5000)
+obj.deposit(10000)
+obj.withdraw(15000)
+obj.withdraw(5000)
