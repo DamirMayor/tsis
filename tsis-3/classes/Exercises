@@ -1,6 +1,6 @@
 import math
 
-print("#1")
+#1
 class string:
     def __init__(self, str):
         self.str = str
@@ -16,8 +16,7 @@ a.getString()
 a.printString()    
 
 
-print('\n')
-print("#2")
+#2
 class Shape:
     def __init__(self, len):
         self.len = len
@@ -35,8 +34,7 @@ print(x.area())
 print(y.area())
 
 
-print('\n')
-print("#3")
+#3
 class Rectangle(Shape):
     def __init__(self, len, wid):
         self.len = len
@@ -49,8 +47,7 @@ x = Rectangle(15, 20)
 print(x.area())
 
 
-print('\n')
-print("#4")
+#4
 class Point:
     def __init__(self, x_coord, y_coord):
         self.x_coord = x_coord
@@ -76,8 +73,7 @@ point.show()
 point.dist(10, 10)
 
 
-print('\n')
-print("#5")
+#5
 class Account:
     def __init__(self, owner, balance):
         self.owner = owner
@@ -102,8 +98,7 @@ obj.withdraw(15000)
 obj.withdraw(5000)
 
 
-print('\n')
-print("#6")
+#6
 def isPrime(val):
     if val == 1:
         return True
