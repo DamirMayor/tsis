@@ -100,3 +100,27 @@ obj.withdraw(5000)
 obj.deposit(10000)
 obj.withdraw(15000)
 obj.withdraw(5000)
+
+
+print('\n')
+print("#6")
+def isPrime(val):
+    if val == 1:
+        return True
+    elif val > 1:
+        for i in range(2, val):
+            if (val % i) == 0:
+                return False
+    return True
+
+def filter(list):
+    result = []
+    for x in list:
+        if (lambda val: isPrime(val))(x):
+            result.append(x)
+            list.remove(x)
+    return result, list
+
+list_ = [1, 2, 3, 4, 5, 6, 7, 8, 21, 607, 937]
+filtered = filter(list_)
+print(filtered)
